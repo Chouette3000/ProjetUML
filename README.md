@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+## UML : Compte-rendu
 
-You can use the [editor on GitHub](https://github.com/tinejah/ProjetUML/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Ce site contient le carnet de bords des différentes séances d'UML
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Séance 1 
+	[GitHub Flavored Markdown](https://chouette3000.github.io/ProjetUML/Seance1/)
 
-### Markdown
+### Séance 2
+	[GitHub Flavored Markdown](https://chouette3000.github.io/ProjetUML/Seance2/)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Séance 3
+	[GitHub Flavored Markdown](https://chouette3000.github.io/ProjetUML/Seance3/)
 
-```markdown
-Syntax highlighted code block
+	
+### Auteurs du site : 
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tinejah/ProjetUML/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- _Camélia Zarzitski Benhmida_ 
+- _Alex Zarzitski_
