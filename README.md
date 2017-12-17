@@ -9,7 +9,7 @@ Ce site contient le carnet de bords des différentes séances d'UML
 [![alt text](img/useCaseMini.png)](https://chouette3000.github.io/ProjetUML/Seance2/)
 
 ### Séance 3
-[![alt text](img/useCaseMini.png)](https://chouette3000.github.io/ProjetUML/Seance3/)
+[![alt text](img/diagDomaineMini.png)](https://chouette3000.github.io/ProjetUML/Seance3/)
 
 ### Séance 4
 [![alt text](img/diagSequenceMini.png)](https://chouette3000.github.io/ProjetUML/Seance4/)
