@@ -1,7 +1,6 @@
 # UML SEANCE 2 : Diagramme de cas d'utilisation
 
-## Qu'est ce qu'un diagramme de cas d'utilisation ?
-
+<h2>Qu'est ce qu'un diagramme de cas d'utilisation ?</h2>
 <p>Le diagramme de cas d’utilisation permet de déterminer les services rendus par le système aux utilisateurs.</p>
 <p>Il définit les différents acteurs et leurs interactions avec le système. Les acteurs externes sont également définis.</p>
 <p>Les acteurs peuvent être des personnes physiques mais également ou d’autres systèmes ou ressources.</p>
@@ -17,8 +16,7 @@
 <li>Scénario d'exception : Déroulement lorsqu'une erreur se produit</li>
 </ul>
 
-## Sens Critique
-
+<h2>Sens Critique</h2>
 <p>Plusieurs énoncés ont été proposé et l'énoncé "Sens critique" a été choisi</p>
 <p>Ce système permet à des utilisateurs de pouvoir noter et émettre une critique sur des films et séries</p>
 
@@ -41,13 +39,11 @@
 <p><b>A quoi sert un diagramme de cas d'utilisation ?</b></p>
 <p>Il sert à représenté les services rendus par le systèmes aux différents acteurs</p>
 
-## Diagramme de cas d'utilisation
-
+<h2>Diagramme de cas d'utilisation</h2>
 <p>à partir de cet énoncé, voici le diagramme de cas d'utilisation réalisé : </p>
-<img src="../img/diagUc.svg" alt="useCase">
+<img src="img/diagUc.svg" alt="useCase">
 
-## Conclusion de la séance
-
+<h2>Conclusion de la séance : </h2>
 <p>Cette séance a permis de revoir les diagrammes de cas d'utilisation en théorie et en pratique sur 2 énoncés car nous avons débuté avec l'énoncé
 donné en exemple <a href="https://mbf-iut.i3s.unice.fr/doku.php?id=2016_2017:s2:td:td_use_cases">ici</a> avant de réaliser celui de sens critique</p>
 <p>Il faut faire attention au sens des flèches <i><b>"include"</i></b> et <i><b>"extend"</i></b> car il aisé de les confondre</p>
