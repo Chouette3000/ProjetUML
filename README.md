@@ -3,14 +3,16 @@
 Ce site contient le carnet de bords des différentes séances d'UML
 
 ### Séance 1 
-[![alt uml](http://fortimelp.fr/250-large_default/formation-uml-analyse-et-conception-4-jours.jpg)](https://chouette3000.github.io/ProjetUML/Seance1/)
+[<img src="http://fortimelp.fr/250-large_default/formation-uml-analyse-et-conception-4-jours.jpg" align="left" width="100" ><br>](https://chouette3000.github.io/ProjetUML/Seance1/)
 
 ### Séance 2
-[<img src="http://fortimelp.fr/250-large_default/formation-uml-analyse-et-conception-4-jours.jpg" align="left" height="48" width="48" ><br>](https://chouette3000.github.io/ProjetUML/Seance2/)
+[<img src="img/useCase.png" align="left" width="100" ><br>](https://chouette3000.github.io/ProjetUML/Seance2/)
 
 ### Séance 3
-[GitHub Flavored Markdown](https://chouette3000.github.io/ProjetUML/Seance3/)
+[<img src="img/useCase.png" align="left" width="100" ><br>](https://chouette3000.github.io/ProjetUML/Seance3/)
 
+### Séance 4
+[<img src="img/diagSequence.png" align="left" width="100" ><br>](https://chouette3000.github.io/ProjetUML/Seance4/)
 	
 ### Auteurs du site : 
 
