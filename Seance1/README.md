@@ -1,4 +1,4 @@
-# UML SEANCE 1 : Introduction à UML (Unified Modeling Language)
+# UML SÉANCE 1 : Introduction à UML (Unified Modeling Language)
 
 <h2>Pourquoi utiliser l'UML ?</h2>
 <p>
