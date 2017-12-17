@@ -16,15 +16,28 @@ méthode, un chiffre ou une valeur sera souvent un attribut. (Tandis qu'une logi
 <li>les méthodes</li>
 </ul>
 
+<h2>Visibilités</h2>
 <p>les méthodes et attributs peuvent avoir différents niveaux d'accessibilité (appelés visibilités) : </p>
-<ul>
-<li>"+"   → public : accessible de partout</li>
-<li>"#"   → protected : accessible uniquement depuis la classe contenante ou les classes filles</li>
-<li>"-"   → private : accessible uniquement par la classe contenante</li>
-</ul>
+
+<table>
+<tr>
+<td>+</td>
+<td>public : accessible de partout</td>
+</tr>
+<tr>
+<td>#</td>
+<td>protected : accessible uniquement depuis la classe contenante ou les classes filles</td>
+</tr>
+<tr>
+<td>-</td>
+<td>private : accessible uniquement par la classe contenante</td>
+</tr>
+
+</table>
+
 <p>Par défaut, en Kotlin, tout est public (pas nécessaire de le préciser) </p>
 
-<h2>Relation entre les classes</h2>
+<h2>Relations entre les classes</h2>
 <p>Les classes peuvent avoir plusieurs types de relations, notamment</p>
 
 <table>
@@ -50,8 +63,6 @@ méthode, un chiffre ou une valeur sera souvent un attribut. (Tandis qu'une logi
 </tr>
 </table>
 <p>Les relations peuvent être unidrectionnelle ou birectionnelle mais, il est préférable de se limiter à un seul sens (relation unidirectionnelle)</p>
-
-</body>
 
 ## Diagramme de classe du domaine (énoncé Sens Critique)
 <img src="../img/diagDomaine.png" alt="diagramme de classe" >
