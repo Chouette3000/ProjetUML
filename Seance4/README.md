@@ -48,7 +48,6 @@ de représenter des conditions et des boucles</p>
 <td>Condition (permet d'effectuer une ou plusieurs actions si une condition est remplie)</td>
 <td><img src="../img/if.PNG" alt="Condition" ></td>
 </tr>
-<tr>
 </table>
 On peut également ajouter des paramètres en message en les inscrivant entre les parenthèses.
 
@@ -57,6 +56,7 @@ des scénarios. cependant, il existe d'autres interactions que l'ont peut décri
 par exemple, il est possible de créer ou de détruire une instance.
 
 <h2>Le système enrichi</h2>
+
 Il permet d'ajouter des éléments supplémentaires :
 
 <ul>
@@ -68,6 +68,7 @@ Il permet d'ajouter des éléments supplémentaires :
 Pour ce faire, on utilise entre autre des messages réflexifs (méthodes privées) et des références
  
 ## Diagramme de séquence décrivant le cas d'utilisation : émettre avis (énoncé Sens Critique)
+
 <img src="../img/diagSequence.png" alt="diagramme de séquence" >
 
 <h2>Conclusion de la séance</h2>
