@@ -23,7 +23,7 @@
 <h2>Réponses aux question relatives à l'énoncé</h2>
 <h3>Quels sont les acteurs ?</h3>
 <p>Administrateur, Critiqueur et utilisateur</p>
-<h3>Quelles sont les relations entre les acteurs ?<h3>
+<h3>Quelles sont les relations entre les acteurs ?</h3>
 <p>Il y a plusieurs relations d'héritage : "Critiqueur" hérite d’ "utilisateur", et "administrateur" hérite de "critiqueur".</p>
 
 <h3>Quels sont les cas d'utilisation ?</h3>
@@ -41,7 +41,7 @@
 
 <h2>Diagramme de cas d'utilisation</h2>
 <p>à partir de cet énoncé, voici le diagramme de cas d'utilisation réalisé : </p>
-<img src="img/useCase.png" alt="useCase">
+<img src="../img/useCase.png" alt="useCase">
 
 <h2>Conclusion de la séance : </h2>
 <p>Cette séance a permis de revoir les diagrammes de cas d'utilisation en théorie et en pratique sur 2 énoncés car nous avons débuté avec l'énoncé
