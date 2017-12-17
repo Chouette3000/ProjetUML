@@ -32,7 +32,7 @@
 <p>Il peut gérer les critiqueurs et mettre en avant des oeuvres</p>
 <h3>Quels acteurs interviennent dans ces différents cas d'utilisation ?</h3>
 <p>Sur le diagramme, les acteurs intervenant dans un cas d'utilisation sont reliés à celui-ci par une flèche, (voir diagramme plus bas)</p>
-<h3>Que visualise le cadre autour des cas d'utilisation?</b></p>
+<h3>Que visualise le cadre autour des cas d'utilisation?</h3>
 <p>Ce cadre représente le système</p>
 <h3>Qu'exprime les cardinalités?</h3>
 <p>Elles expriment le nombre minimal et maximal d'instance dans une classe</p>
@@ -41,9 +41,9 @@
 
 <h2>Diagramme de cas d'utilisation</h2>
 <p>à partir de cet énoncé, voici le diagramme de cas d'utilisation réalisé : </p>
-<img src="img/diagUc.svg" alt="useCase">
+<img src="img/useCase.png" alt="useCase">
 
 <h2>Conclusion de la séance : </h2>
 <p>Cette séance a permis de revoir les diagrammes de cas d'utilisation en théorie et en pratique sur 2 énoncés car nous avons débuté avec l'énoncé
 donné en exemple <a href="https://mbf-iut.i3s.unice.fr/doku.php?id=2016_2017:s2:td:td_use_cases">ici</a> avant de réaliser celui de sens critique</p>
-<p>Il faut faire attention au sens des flèches <i><b>"include"</i></b> et <i><b>"extend"</i></b> car il aisé de les confondre</p>
+<p>Il faut faire attention au sens des flèches "include" et "extend" car il aisé de les confondre</p>
