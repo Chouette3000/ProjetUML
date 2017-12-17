@@ -34,12 +34,6 @@ Un diagramme de séquence est donc également réalisé à partir de la descript
 <td>Message réflexif (message interne à l'objet : méthode privée)</td>
 <td><img src="../img/messageReflexif.PNG" alt="Message réflexif" ></td>
 </tr>
-</table>
-
-<p>Pour compléter et décrire le mieux possible les scénarios, le diagramme de séquence permet également
-de représenter des conditions et des boucles</p>
-
-<table>
 <tr>
 <td>Boucle (permet de répéter plusieurs fois une séquence d'actions)</td>
 <td><img src="../img/loop.PNG" alt="loop" ></td>
@@ -49,6 +43,7 @@ de représenter des conditions et des boucles</p>
 <td><img src="../img/if.PNG" alt="Condition" ></td>
 </tr>
 </table>
+
 On peut également ajouter des paramètres en message en les inscrivant entre les parenthèses.
 
 Tous ces messages sont les plus utilisés et peuvent suffir à décrire correctement le déroulement
