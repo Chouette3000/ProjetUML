@@ -21,22 +21,22 @@
 <p>Ce système permet à des utilisateurs de pouvoir noter et émettre une critique sur des films et séries</p>
 
 <h2>Réponses aux question relatives à l'énoncé</h2>
-<p><b>1. Quels sont les acteurs ?</b></p>
+<h3>Quels sont les acteurs ?</h3>
 <p>Administrateur, Critiqueur et utilisateur</p>
-<p><b>2. Quelles sont les relations entre les acteurs ?</b></p>
+<h3>Quelles sont les relations entre les acteurs ?<h3>
 <p>Il y a plusieurs relations d'héritage : "Critiqueur" hérite d’ "utilisateur", et "administrateur" hérite de "critiqueur".</p>
 
-<p><b>Quels sont les cas d'utilisation ?</b></p>
+<h3>Quels sont les cas d'utilisation ?</h3>
 <p>Voir le diagramme correspondant (plus bas)</p>
-<p><b>Que peut faire un administrateur</b></p>
+<h3>Que peut faire un administrateur</h3>
 <p>Il peut gérer les critiqueurs et mettre en avant des oeuvres</p>
-<p><b>Quels acteurs interviennent dans ces différents cas d'utilisation ?</b></p>
+<h3>Quels acteurs interviennent dans ces différents cas d'utilisation ?</h3>
 <p>Sur le diagramme, les acteurs intervenant dans un cas d'utilisation sont reliés à celui-ci par une flèche, (voir diagramme plus bas)</p>
-<p><b>Que visualise le cadre autour des cas d'utilisation?</b></p>
+<h3>Que visualise le cadre autour des cas d'utilisation?</b></p>
 <p>Ce cadre représente le système</p>
-<p><b>Qu'exprime les cardinalités?</b></p>
+<h3>Qu'exprime les cardinalités?</h3>
 <p>Elles expriment le nombre minimal et maximal d'instance dans une classe</p>
-<p><b>A quoi sert un diagramme de cas d'utilisation ?</b></p>
+<h3>A quoi sert un diagramme de cas d'utilisation ?</h3>
 <p>Il sert à représenté les services rendus par le systèmes aux différents acteurs</p>
 
 <h2>Diagramme de cas d'utilisation</h2>
