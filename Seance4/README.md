@@ -16,23 +16,23 @@ Un diagramme de séquence est donc également réalisé à partir de la descript
 <table>
 <tr>
 <td>La ligne de vie représentant la chronologie</td>
-<td><img src="../img/ligneVie.png" alt="ligne de Vie" ></td>
+<td><img src="../img/ligneVie.PNG" alt="ligne de Vie" ></td>
 </tr>
 <tr>
 <td>Message asynchrone (qui n'attend pas de retour)</td>
-<td><img src="../img/messageAsynchrone.png" alt="Message Asynchrone" ></td>
+<td><img src="../img/messageAsynchrone.PNG" alt="Message Asynchrone" ></td>
 </tr>
 <tr>
 <td>Message synchrone (qui attend un retour)</td>
-<td><img src="../img/messageSynchrone.png" alt="Message Synchrone" ></td>
+<td><img src="../img/messageSynchrone.PNG" alt="Message Synchrone" ></td>
 </tr>
 <tr>
 <td>Message de retour (après un message synchrone)</td>
-<td><img src="../img/retourExplicite.png" alt="Message de retour" ></td>
+<td><img src="../img/retourExplicite.PNG" alt="Message de retour" ></td>
 </tr>
 <tr>
 <td>Message réflexif (message interne à l'objet : méthode privée)</td>
-<td><img src="../img/messageReflexif.png" alt="Message réflexif" ></td>
+<td><img src="../img/messageReflexif.PNG" alt="Message réflexif" ></td>
 </tr>
 </table>
 
@@ -42,11 +42,11 @@ de représenter des conditions et des boucles</p>
 <table>
 <tr>
 <td>Boucle (permet de répéter plusieurs fois une séquence d'actions)</td>
-<td><img src="../img/loop.png" alt="loop" ></td>
+<td><img src="../img/loop.PNG" alt="loop" ></td>
 </tr>
 <tr>
 <td>Condition (permet d'effectuer une ou plusieurs actions si une condition est remplie)</td>
-<td><img src="../img/if.png" alt="Condition" ></td>
+<td><img src="../img/if.PNG" alt="Condition" ></td>
 </tr>
 <tr>
 </table>
