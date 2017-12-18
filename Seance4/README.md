@@ -48,6 +48,10 @@ de représenter des conditions et des boucles</p>
 
 <table>
 <tr>
+<th>Élément</th>
+<th>Représentation UML</th>
+</tr>
+<tr>
 <td>Boucle (permet de répéter plusieurs fois une séquence d'actions)</td>
 <td><img src="../img/loop.PNG" alt="loop" ></td>
 </tr>
@@ -79,7 +83,7 @@ Pour ce faire, on utilise entre autre des messages réflexifs (méthodes privée
 <p>Voici le diagramme correspondant à la description du scénario du cas d'utilisation émettre avis</p>
 <p>Ce UC permet à un critiqueur de donner son avis sur une oeuvre</p>
 <p>Tout d'abord, voici la description du UC :</p>
-<img src="../img/descriptionUc.png" alt="description" >
+<img src="../img/descriptionUc.PNG" alt="description" >
 
 <p>Et voici le diagramme de séquence correspondant :</p>
 <img src="../img/diagSequence.png" alt="diagramme de séquence" >
