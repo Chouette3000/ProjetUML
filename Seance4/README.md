@@ -73,7 +73,7 @@ Il permet d'ajouter des éléments supplémentaires :
 <ul>
 <li>Les actions internes au système (par exemple la vérification des identifiants de l'utilisateur)</li>
 <li>les déroulements alternatifs</li>
-<li>les enchainement en cas d'erreur</li>
+<li>les enchainements en cas d'erreur</li>
 </ul>
 
 Pour ce faire, on utilise entre autre des messages réflexifs (méthodes privées) et des références
