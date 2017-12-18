@@ -29,7 +29,7 @@
 <h3>Quels sont les cas d'utilisation ?</h3>
 <p>Voir le diagramme correspondant (plus bas)</p>
 <h3>Que peut faire un administrateur</h3>
-<p>Il peut gérer les critiqueurs et mettre en avant des oeuvres</p>
+<p>Il peut faire la même chose qu'un critiqueur (et qu'un utilisateur, par héritage) et peut également gérer les critiqueurs et mettre en avant des oeuvres</p>
 <h3>Quels acteurs interviennent dans ces différents cas d'utilisation ?</h3>
 <p>Sur le diagramme, les acteurs intervenant dans un cas d'utilisation sont reliés à celui-ci par une flèche, (voir diagramme plus bas)</p>
 <h3>Que visualise le cadre autour des cas d'utilisation?</h3>
@@ -40,7 +40,10 @@
 <p>Il sert à représenté les services rendus par le systèmes aux différents acteurs</p>
 
 <h2>Diagramme de cas d'utilisation</h2>
-<p>à partir de cet énoncé, voici le diagramme de cas d'utilisation réalisé : </p>
+<p>Pour réaliser ce diagramme, nous avons analyser le texte afin de reconnaître les acteurs (qui interagit avec le système ou lui apporte quelque chose).
+une fois les acteurs trouvés, l'analyse a permis d'extraire les cas d'utilisation
+</p>
+<p>à partir de cet énoncé, voici donc le diagramme de cas d'utilisation réalisé : </p>
 <img src="../img/useCase.png" alt="useCase">
 
 <h2>Conclusion de la séance : </h2>
