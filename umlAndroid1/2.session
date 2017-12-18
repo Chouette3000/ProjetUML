@@ -1,0 +1,22 @@
+window_sizes 1914 1001 450 1458 819 128
+
+diagrams
+  usecasediagram_ref 128002 // DiagUC
+    1464 815 115 A4 0 0
+  active  sequencediagram_ref 134530 // diagSequence
+    1464 819 150 A4 0 0
+  classdiagram_ref 134658 // diagClasses
+    114 98 100 A4 0 0
+end
+show_stereotypes
+selected sequencediagram_ref 134530 // diagSequence
+open
+  class_ref 128002 // Administrateur
+  class_ref 128130 // Utilisateur
+  class_ref 128258 // Critiqueur
+  class_ref 135042 // Oeuvre
+  class_ref 135170 // Administrateur
+  class_ref 135298 // Critiqueur
+  class_ref 135426 // Utilisateur
+end
+end

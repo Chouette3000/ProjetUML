@@ -1,0 +1,73 @@
+format 214
+
+classcanvas 128002 class_ref 128002 // Administrateur
+  simpleclassdiagramsettings end
+  xyz 96.16 82.5 2000
+end
+classcanvas 128130 class_ref 128130 // Utilisateur
+  simpleclassdiagramsettings end
+  xyz 114.83 437.85 2000
+end
+classcanvas 128258 class_ref 128258 // Critiqueur
+  simpleclassdiagramsettings end
+  xyz 116.22 215.22 2000
+end
+subject 128386 "Sens crititque"
+  xyzwh 240.16 32.24 2000 285 563
+usecasecanvas 128514 usecase_ref 128002 // GererCritiqueurs
+  xyzwh 346.9 150.1 3005 131 39 label_xy 362 159
+end
+usecasecanvas 128642 usecase_ref 128130 // Noter
+  xyzwh 371.8 234 3005 83 33 label_xy 396 242
+end
+usecasecanvas 128770 usecase_ref 128258 // EmettreAvis
+  xyzwh 263.3 266.4 3005 109 41 label_xy 282 276
+end
+usecasecanvas 128898 usecase_ref 128386 // s'inscrire
+  xyzwh 338.3 414 3005 99 34 label_xy 362 423
+end
+usecasecanvas 129538 usecase_ref 128514 // rechercher
+  xyzwh 338.5 540.4 3005 96 33 label_xy 353 546
+end
+usecasecanvas 130306 usecase_ref 128898 // visualiserAvis
+  xyzwh 315.4 465.8 3005 143 34 label_xy 346 475
+end
+usecasecanvas 130434 usecase_ref 129026 // mettreEnAvant
+  xyzwh 341.2 92.1 3005 135 35 label_xy 368 99
+end
+usecasecanvas 130690 usecase_ref 129154 // s'authentifier
+  xyzwh 338.1 343.1 3005 144 33 label_xy 377 352
+end
+relationcanvas 131074 relation_ref 128002 // <generalisation>
+  from ref 128258 z 2001 to ref 128130
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+simplerelationcanvas 131586 simplerelation_ref 128386
+  decenter_end 180
+  from ref 128770 z 3006 stereotype "<<include>>" xyz 316 315 3000 to ref 130690
+end
+simplerelationcanvas 131714 simplerelation_ref 128514
+  from ref 128642 z 3006 stereotype "<<include>>" xyz 382 295 3000 to ref 130690
+end
+line 131970 ----
+  from ref 128258 z 3006 to ref 128642
+line 132098 ----
+  from ref 128258 z 3006 to ref 128770
+line 132226 ----
+  from ref 128002 z 3006 to ref 130434
+line 132354 ----
+  from ref 128002 z 3006 to ref 128514
+relationcanvas 132482 relation_ref 134530 // <generalisation>
+  from ref 128002 z 2001 to ref 128258
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+line 132610 ----
+  from ref 128130 z 3006 to ref 128898
+line 132994 ----
+  from ref 128130 z 3006 to ref 130306
+simplerelationcanvas 133122 simplerelation_ref 135042
+  from ref 129538 z 3006 stereotype "<<extend>>" xyz 352 518 3000 to ref 130306
+end
+end

@@ -1,0 +1,812 @@
+format 214
+"sensCritique" // sensCritique
+  revision 4
+  modified_by 2 "Camelia"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  usecaseview 128002 "vueUC"
+    
+    usecasediagramsettings end
+    
+    sequencediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    classdiagramsettings member_max_width 0 end
+    
+    objectdiagramsettings end
+    
+    statediagramsettings
+     end
+    
+    activitydiagramsettings
+     end
+    usecasediagram 128002 "DiagUC"
+      usecasediagramsettings draw_all_relations no end
+      size A4
+    end
+
+    class 128002 "Administrateur"
+      visibility package stereotype "actor"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 134530 // <generalisation>
+	relation 134530 ---|>
+	  a public
+	    classrelation_ref 134530 // <generalisation>
+	  b parent class_ref 128258 // Critiqueur
+      end
+
+    end
+
+    class 128130 "Utilisateur"
+      visibility package stereotype "actor"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 128258 "Critiqueur"
+      visibility package stereotype "actor"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 128002 // <generalisation>
+	relation 128002 ---|>
+	  a public
+	    classrelation_ref 128002 // <generalisation>
+	  b parent class_ref 128130 // Utilisateur
+      end
+
+    end
+
+    usecase 128002 "GererCritiqueurs"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+    end
+
+    usecase 128130 "Noter"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      ncouples 6
+      key "Summary" value ""
+      key "Context" value ""
+      key "Pre-Conditions" value "l'utilisateur doit être authentifié"
+      key "Description" value "1) l'utilisateur remplit le formulaire de notation
+2) le système enregistre la note et la publie "
+      key "Post-Conditions" value ""
+      key "Exceptions" value ""
+      simplerelation 128514
+	-_->
+	  stereotype "include"
+	  on usecase_ref 129154 // s'authentifier
+      end
+    end
+
+    usecase 128258 "EmettreAvis"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      ncouples 6
+      key "Summary" value ""
+      key "Context" value ""
+      key "Pre-Conditions" value "l'utilisateur doit être authentifié"
+      key "Description" value "1) le critiqueur recherche une oeuvre
+2) le système liste les oeuvres correspondant à la recherche
+3) le critiqueur sélectionne une oeuvre
+4) le critiqueur remplit le formulaire de publication d'un avis et le soumet
+5) le système affiche un message de confirmation d'enregistrement de l'avis
+6) le système enregistre l'avis et le publie "
+      key "Post-Conditions" value ""
+      key "Exceptions" value ""
+      simplerelation 128002
+	-_->
+	  on usecase_ref 129154 // s'authentifier
+      end
+
+      simplerelation 128386
+	-_->
+	  stereotype "include"
+	  on usecase_ref 129154 // s'authentifier
+      end
+    end
+
+    usecase 128386 "s'inscrire"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      ncouples 6
+      key "Summary" value ""
+      key "Context" value ""
+      key "Pre-Conditions" value "Le mail saisi ne doit pas être déjà utilisé "
+      key "Description" value "Cas nominal
+L'utilisateur clique sur bouton d'inscription
+le système affiche le formulaire d'inscription
+l'utilisateur remplit le formulaire et le soumet
+le système affiche une confirmation et permet à l'utilisateur de se connecter
+
+cas d'erreur
+L'utilisateur saisit une adresse mail appartenant à un utilisateur déjà inscrit
+Le système affiche une alerte pour prévenir l'utilisateur et affiche a nouveau le formulaire d'inscription
+"
+      key "Post-Conditions" value ""
+      key "Exceptions" value ""
+    end
+
+    usecase 128514 "rechercher"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      ncouples 6
+      key "Summary" value ""
+      key "Context" value ""
+      key "Pre-Conditions" value ""
+      key "Description" value "1) l'utilisateur effectue une recherche via les filtres et le formulaire de recherche
+2) le système affiche les oeuvres trouvées en fonction de la recherche"
+      key "Post-Conditions" value ""
+      key "Exceptions" value ""
+      simplerelation 135042
+	-_->
+	  stereotype "extend"
+	  on usecase_ref 128898 // visualiserAvis
+      end
+    end
+
+    usecase 128642 "rechercherParGenre"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+    end
+
+    usecase 128770 "rechercherParProducteur"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+    end
+
+    usecase 128898 "visualiserAvis"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      ncouples 6
+      key "Summary" value ""
+      key "Context" value ""
+      key "Pre-Conditions" value "l'utilisateur a effectué une recherche
+le système a trouvé des oeuvres correspondant à la recherche"
+      key "Description" value "1) l'utilisateur sélectionne une oeuvre
+2) le système affiche les différents avis sur l'oeuvre ainsi que la note "
+      key "Post-Conditions" value ""
+      key "Exceptions" value ""
+    end
+
+    usecase 129026 "mettreEnAvant"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      ncouples 6
+      key "Summary" value ""
+      key "Context" value ""
+      key "Pre-Conditions" value "1) L'administrateur doit être authentifié
+2) l'admistrateur ne doit pas avoir déjà mis en avant une oeuvre dans les dernière 24h"
+      key "Description" value "Cas nominal
+
+1) l'administrateur effectue une recherche pour retrouver le film ou la série de son choix
+2) le système affiche la liste en fonction de la recherche effectuée
+3) l'administrateur sélectionne le film ou la série qu'il souhaite mettre en avant
+4) le système affiche les détails sur l'oeuvre sélectionnée
+5) L'admistrateur appuie sur le bouton permettant de mettre en avant l'oeuvre
+6) le système retire l'oeuvre qui était promu avant celle selectionnée actuellement
+7 le système affiche désormais l'oeuvre sélectionnée sur le site afin de la promouvoir
+
+Cas alternatif 
+
+l'oeuvre est déjà mise en avant : 
+Le système affiche une alerte pour indiquer à l'administrateur que cette oeuvre est déjà mise en avant
+1) l'oeuvre est déjà mise en avant"
+      key "Post-Conditions" value ""
+      key "Exceptions" value ""
+    end
+
+    usecase 129154 "s'authentifier"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      ncouples 6
+      key "Summary" value ""
+      key "Context" value ""
+      key "Pre-Conditions" value "l'utilisateur doit être inscrit"
+      key "Description" value "l'utilisateur remplit le formulaire de connexion
+le système vérifie et l'authentifie 
+l'utilisateur peut désormais noter et poster des avis sur les films/séries"
+      key "Post-Conditions" value ""
+      key "Exceptions" value ""
+      simplerelation 128130
+	-_->
+	  stereotype "include"
+	  on usecase_ref 128130 // Noter
+      end
+
+      simplerelation 128258
+	-_->
+	  on usecase_ref 128258 // EmettreAvis
+      end
+    end
+  end
+
+  classview 134530 "VueClasse"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    sequencediagram 134530 "diagSequence"
+      sequencediagramsettings end
+      overlapping_bars size A4
+    end
+
+    class 134786 "SensCritique"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 134914 "oeuvre"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    classdiagram 134658 "diagClasses"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+
+    class 135042 "Oeuvre"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 134530 "nom"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	get_oper operation_ref 134786 // get_nom
+	set_oper operation_ref 134914 // set_nom
+      end
+
+      attribute 134658 "producteur"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	get_oper operation_ref 135042 // get_producteur
+	set_oper operation_ref 135170 // set_producteur
+      end
+
+      attribute 134786 "realisateur"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	get_oper operation_ref 135298 // get_realisateur
+	set_oper operation_ref 135426 // set_realisateur
+      end
+
+      operation 134786 "get_nom"
+	force_body_gen const cpp_inline public explicit_return_type "string"
+	nparams 0
+	
+	cpp_name_spec "get_${name}"
+	final 
+	java_name_spec "get${Name}"
+	php_final 
+	php_name_spec "get${Name}"
+	
+	python_name_spec "get${Name}"
+	
+	idl_name_spec "get_${name}"
+	get_of_attribute attribute_ref 134530 // nom
+      end
+
+      operation 134914 "set_nom"
+	force_body_gen public explicit_return_type "void"
+	nparams 1
+	  param in name "value" explicit_type "string"
+	
+	cpp_name_spec "set_${name}"
+	
+	java_name_spec "set${Name}"
+	
+	php_name_spec "set${Name}"
+	
+	python_name_spec "set${Name}"
+	
+	idl_name_spec "set_${name}"
+	set_of_attribute attribute_ref 134530 // nom
+      end
+
+      operation 135042 "get_producteur"
+	force_body_gen const cpp_inline public explicit_return_type "string"
+	nparams 0
+	
+	cpp_name_spec "get_${name}"
+	final 
+	java_name_spec "get${Name}"
+	php_final 
+	php_name_spec "get${Name}"
+	
+	python_name_spec "get${Name}"
+	
+	idl_name_spec "get_${name}"
+	get_of_attribute attribute_ref 134658 // producteur
+      end
+
+      operation 135170 "set_producteur"
+	force_body_gen public explicit_return_type "void"
+	nparams 1
+	  param in name "value" explicit_type "string"
+	
+	cpp_name_spec "set_${name}"
+	
+	java_name_spec "set${Name}"
+	
+	php_name_spec "set${Name}"
+	
+	python_name_spec "set${Name}"
+	
+	idl_name_spec "set_${name}"
+	set_of_attribute attribute_ref 134658 // producteur
+      end
+
+      operation 135298 "get_realisateur"
+	force_body_gen const cpp_inline public explicit_return_type "string"
+	nparams 0
+	
+	cpp_name_spec "get_${name}"
+	final 
+	java_name_spec "get${Name}"
+	php_final 
+	php_name_spec "get${Name}"
+	
+	python_name_spec "get${Name}"
+	
+	idl_name_spec "get_${name}"
+	get_of_attribute attribute_ref 134786 // realisateur
+      end
+
+      operation 135426 "set_realisateur"
+	force_body_gen public explicit_return_type "void"
+	nparams 1
+	  param in name "value" explicit_type "string"
+	
+	cpp_name_spec "set_${name}"
+	
+	java_name_spec "set${Name}"
+	
+	php_name_spec "set${Name}"
+	
+	python_name_spec "set${Name}"
+	
+	idl_name_spec "set_${name}"
+	set_of_attribute attribute_ref 134786 // realisateur
+      end
+
+      attribute 135426 "type"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	get_oper operation_ref 137346 // get_type
+	set_oper operation_ref 137474 // set_type
+      end
+
+      operation 137346 "get_type"
+	force_body_gen const cpp_inline public explicit_return_type "string"
+	nparams 0
+	
+	cpp_name_spec "get_${name}"
+	final 
+	java_name_spec "get${Name}"
+	php_final 
+	php_name_spec "get${Name}"
+	
+	python_name_spec "get${Name}"
+	
+	idl_name_spec "get_${name}"
+	get_of_attribute attribute_ref 135426 // type
+      end
+
+      operation 137474 "set_type"
+	force_body_gen public explicit_return_type "void"
+	nparams 1
+	  param in name "value" explicit_type "string"
+	
+	cpp_name_spec "set_${name}"
+	
+	java_name_spec "set${Name}"
+	
+	php_name_spec "set${Name}"
+	
+	python_name_spec "set${Name}"
+	
+	idl_name_spec "set_${name}"
+	set_of_attribute attribute_ref 135426 // type
+      end
+    end
+
+    class 135170 "Administrateur"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 136322 "gererCritiqueurs"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 136450 "mettreEnAvantOeuvre"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      classrelation 141186 // <generalisation>
+	relation 141186 ---|>
+	  a public
+	    classrelation_ref 141186 // <generalisation>
+	  b parent class_ref 135298 // Critiqueur
+      end
+    end
+
+    class 135298 "Critiqueur"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 135170 "username"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 135298 "password"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 136578 "s'authentifier"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 136706 "emettreAvis"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 136834 "noterOeuvre"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      classrelation 141058 // <generalisation>
+	relation 141058 ---|>
+	  a public
+	    classrelation_ref 141058 // <generalisation>
+	  b parent class_ref 135426 // Utilisateur
+      end
+    end
+
+    class 135426 "Utilisateur"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 136962 "rechercherOeuvre"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 137090 "s'inscrire"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 137218 "visualiserAvis"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+    end
+
+    class 135554 "dd"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+  end
+end

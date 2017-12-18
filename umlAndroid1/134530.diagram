@@ -1,0 +1,109 @@
+format 214
+
+classinstance 128130 class_ref 128258 // Critiqueur
+  name ""   xyz 118.8 6 2005 life_line_z 2000
+classinstance 128258 class_ref 134786 // SensCritique
+  name ""   xyz 333 9.4 2005 life_line_z 2000
+classinstance 129026 class_ref 134914 // oeuvre
+  name ""   xyz 584.4 9.8 2000 life_line_z 2000
+fragment 133762 "opt"
+  form "authenticationOK" xyzwh 95 140 1995 561 251
+end
+note 133890 "si authentification OK"
+  xyzwh 10 65 2025 107 65
+durationcanvas 129794 classinstance_ref 128130 // :Critiqueur
+  xyzwh 143 59.4 2010 11 41
+end
+durationcanvas 129922 classinstance_ref 128258 // :SensCritique
+  xyzwh 373 59.6 2010 11 48
+  overlappingdurationcanvas 133378
+    xyzwh 379 69.5 2020 11 25
+  end
+end
+durationcanvas 130306 classinstance_ref 128130 // :Critiqueur
+  xyzwh 143 167.8 2015 11 40
+end
+durationcanvas 130434 classinstance_ref 128258 // :SensCritique
+  xyzwh 373 167.8 2015 11 36
+end
+durationcanvas 130690 classinstance_ref 129026 // :oeuvre
+  xyzwh 604 183.2 2015 11 25
+end
+durationcanvas 131074 classinstance_ref 128258 // :SensCritique
+  xyzwh 373 272.8 2015 11 40
+end
+durationcanvas 131202 classinstance_ref 129026 // :oeuvre
+  xyzwh 606 273.6 2015 11 25
+end
+durationcanvas 131458 classinstance_ref 128258 // :SensCritique
+  xyzwh 371 328.4 2015 11 40
+end
+durationcanvas 131586 classinstance_ref 129026 // :oeuvre
+  xyzwh 606 329.2 2015 11 25
+end
+durationcanvas 131842 classinstance_ref 128130 // :Critiqueur
+  xyzwh 143 230.6 2015 11 40
+end
+durationcanvas 131970 classinstance_ref 128258 // :SensCritique
+  xyzwh 373 233 2015 11 27
+end
+msg 130050 synchronous
+  from durationcanvas_ref 129794
+  to durationcanvas_ref 129922
+  yz 59 2015 explicitmsg "s'authentifier()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 222 44
+msg 130562 asynchronous
+  from durationcanvas_ref 130306
+  to durationcanvas_ref 130434
+  yz 172 2025 explicitmsg "RechercherOeuvre()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 202 159
+msg 130818 asynchronous
+  from durationcanvas_ref 130434
+  to durationcanvas_ref 130690
+  yz 192 2025 explicitmsg "lister()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 476 177
+msg 130946 return
+  from durationcanvas_ref 130434
+  to durationcanvas_ref 130306
+  yz 194 2025 explicitmsg "listeOeuvres"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 226 181
+msg 131330 asynchronous
+  from durationcanvas_ref 131074
+  to durationcanvas_ref 131202
+  yz 271 2025 explicitmsg "enregistrerAvis"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 444 257
+msg 131714 asynchronous
+  from durationcanvas_ref 131458
+  to durationcanvas_ref 131586
+  yz 328 2025 explicitmsg "mettreAJourOeuvres"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 429 313
+msg 132098 synchronous
+  from durationcanvas_ref 131842
+  to durationcanvas_ref 131970
+  yz 230 2025 explicitmsg "EmettreAvisSurOeuvre()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 194 215
+msg 132226 return
+  from durationcanvas_ref 131970
+  to durationcanvas_ref 131842
+  yz 250 2025 explicitmsg "confirmation"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 228 235
+msg 133250 return
+  from durationcanvas_ref 129922
+  to durationcanvas_ref 129794
+  yz 90 2015 explicitmsg "retourAuthentfication"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 201 75
+reflexivemsg 133506 synchronous
+  to durationcanvas_ref 133378
+  yz 69 2025 explicitmsg "verifierIdentifiants"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 401 75
+end
