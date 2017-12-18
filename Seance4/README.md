@@ -69,6 +69,12 @@ Pour ce faire, on utilise entre autre des messages réflexifs (méthodes privée
  
 ## Diagramme de séquence décrivant le cas d'utilisation : émettre avis (énoncé Sens Critique)
 
+<p>Voici le diagramme correspondant à la description du scénario du cas d'utilisation émettre avis</p>
+<p>Ce UC permet à un critiqueur de donner son avis sur une oeuvre</p>
+<p>Tout d'abord, voici la description du UC :</p>
+<img src="../img/descriptionUc.png" alt="description" >
+
+<p>Et voici le diagramme de séquence correspondant :</p>
 <img src="../img/diagSequence.png" alt="diagramme de séquence" >
 
 <h2>Conclusion de la séance</h2>

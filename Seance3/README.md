@@ -65,5 +65,6 @@ méthode, un chiffre ou une valeur sera souvent un attribut. (Tandis qu'une logi
 <p>Les relations peuvent être unidrectionnelle ou birectionnelle mais, il est préférable de se limiter à un seul sens (relation unidirectionnelle)</p>
 
 <h2>Diagramme de classe du domaine (énoncé Sens Critique)</h2>
+<p>En analysant le diagramme de UC, voici le diagramme de classe de domaine que nous avons produit. </p>
 
 <img src="../img/diagDomaine.png" alt="diagramme de classe" >
