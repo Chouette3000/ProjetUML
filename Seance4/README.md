@@ -88,6 +88,30 @@ Pour ce faire, on utilise entre autre des messages réflexifs (méthodes privée
 <p>Et voici le diagramme de séquence correspondant :</p>
 <img src="../img/diagSequence.png" alt="diagramme de séquence" >
 
+<p></p>
+<h2>Réponses aux questions relatives à l'énoncé : https://mbf-iut.i3s.unice.fr/doku.php?id=2016_2017:s2:td:td_sequences </h2>
+<h3>Quels sont les acteurs</h3>
+Client et Hotel 
+<h3>Comprenez-vous le scénario?</h3>
+Oui, un client souhaite réserver un hôtel, il fait donc une recherche, le système lui retourne les hotels disponibles afin qu'il puisse sélectionner celui de son choix
+<h3>Quelle structure correspond à une boucle?</h3>
+"Loop"
+<h3>à une condition?</h3>
+"Opt"
+<h3>Quel objet est créé?</h3>
+L'objet "reservation"
+<h3>Qui exécute le comportement de “réserver une chambre à une date donnée” ?</h3>
+la classe Hotel Chain
+<h3>Qui répond à “available(date)” ?</h3>
+L'objet hotel
+<h3>Qui fait appel à “available(date)” ?</h3>
+L'objet hotelChain fait appel à la méthode  “available() de l'objet hotel
+<h3>Qui exécute “lookForAvailableHotels(Place)” ?</h3>
+l'objet hotelChain
+<h3>Que devez-vous modifier pour que les “éléments” clef correspondent à des classes ?</h3>
+il faut changer le stéréotype de l'élément
+
+
 <h2>Conclusion de la séance</h2>
 Le diagramme de séquence est très utile pour décrire graphiquement les interactions et la chronologie 
 d'un cas d'utilisation. Il doit être défini dans un contexte précis, pour un cas d'utilisation précis.
