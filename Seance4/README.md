@@ -1,19 +1,25 @@
 # UML SEANCE 3 : Diagramme de séquence
 
 ## Qu'est ce le Diagramme de séquence ?
+
 <p>Ce diagramme permet de décrire les interactions entre les acteurs et le système</p>
 
 <p>L'intérêt principal de ce diagramme est qu'il montre le déroulement chronologique d'un scénario (contrairement au diagramme d'activité)</p>
 
-
 <h2>Lien avec le diagramme de cas d'utilisation</h2>
+
 <p>Tandis que le diagramme de cas d'utilisation présente une vue externe du système, le diagramme de 
 séquence expose les interactions entre les objets afin de réaliser un cas d'utilisation.
+
 Un diagramme de séquence est donc également réalisé à partir de la description d'un cas d'utilisation.
 </p>
 
 <h2>Principaux éléments du diagramme de séquence</h2>
 <table>
+<tr>
+<th>Élément</th>
+<th>Représentation UML</th>
+</tr>
 <tr>
 <td>La ligne de vie représentant la chronologie</td>
 <td><img src="../img/ligneVie.PNG" alt="ligne de Vie" ></td>
@@ -35,7 +41,8 @@ Un diagramme de séquence est donc également réalisé à partir de la descript
 <td><img src="../img/messageReflexif.PNG" alt="Message réflexif" ></td>
 </tr>
 </table>
-
+Les messages sont des actions (appels à des méthodes réalisant l'action)
+ 
 <p>Pour compléter et décrire le mieux possible les scénarios, le diagramme de séquence permet également
 de représenter des conditions et des boucles</p>
 
