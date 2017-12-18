@@ -42,23 +42,33 @@ méthode, un chiffre ou une valeur sera souvent un attribut. (Tandis qu'une logi
 
 <table>
 <tr>
-<td>l'Association</td>
+<th>Relation</th>
+<th>Contexte</th>
+<th>Représentation UML</th>
+</tr>
+<tr>
+<td>Association</td>
+<td>Une instance d'une classe utilise une instance d'autre classe</td>
 <td><img src="../img/association.png" alt="association"></td>
 </tr>
 <tr>
-<td>l'Héritage (Généralisation et Spécialisation)</td>
+<td>Héritage (Généralisation et Spécialisation)</td>
+<td>Une classe hérite d'une autre (dispose au moins des mêmes attributs et méthodes)</td>
 <td><img src="../img/heritage.png" alt="heritage"></td>
 </tr>
 <tr>
-<td>l'Agrégation</td>
+<td>Agrégation</td>
+<td>Une classe contient une autre classe mais la durée de vie du contenu n'est pas lié à celle du contenant</td>
 <td><img src="../img/agregation.png" alt="agregation" ></td>
 </tr>
 <tr>
-<td>la Composition </td>
+<td>Composition </td>
+<td>Une classe contient une autre classe et le celle contenue est détruit en même temps que celle contenante</td>
 <td><img src="../img/composition.png" alt="compositon"></td>
 </tr>
 <tr>
-<td>la Dépendance</td>
+<td>Dépendance</td>
+<td>Une classe a besoin d'une autre à un moment donné (ex: lors de l'exécution d'une méthode précise)</td>
 <td><img src="../img/dependance.png" alt="dependance"></td>
 </tr>
 </table>
