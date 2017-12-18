@@ -1,6 +1,7 @@
 ## UML : Compte-rendu
 
 Ce site contient le carnet de bords des différentes séances d'UML
+Le dossier git associé contient la modélisation UML (réalisée avec le logiciel "Bouml")
 
 ### Séance 1 
 [![alt text](img/umlMini.jpg)](https://chouette3000.github.io/ProjetUML/Seance1/)
