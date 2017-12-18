@@ -63,7 +63,7 @@ méthode, un chiffre ou une valeur sera souvent un attribut. (Tandis qu'une logi
 </tr>
 <tr>
 <td>Composition </td>
-<td>Une classe contient une autre classe et le celle contenue est détruit en même temps que celle contenante</td>
+<td>Une classe contient une autre classe et celle contenue est détruit en même temps que celle contenante</td>
 <td><img src="../img/composition.png" alt="compositon"></td>
 </tr>
 <tr>
