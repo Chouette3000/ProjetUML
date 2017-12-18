@@ -78,3 +78,9 @@ méthode, un chiffre ou une valeur sera souvent un attribut. (Tandis qu'une logi
 <p>En analysant le diagramme de UC, voici le diagramme de classe de domaine que nous avons produit. </p>
 
 <img src="../img/diagDomaine.png" alt="diagramme de classe" >
+
+<h2>Conclusion de la séance</h2>
+<p>Ce diagramme est utile pour modéliser les classes nécessaires au système et les relations entre ces 
+classes. Il permet également de comparer les classes pour pouvoir optimiser le codage en utilisant 
+au mieux l'orienté objet : modéliser des classes abstraites en utilisant l'héritage, réflechir au type de relation le plus adéquat etc.
+</p>
