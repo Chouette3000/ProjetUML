@@ -89,7 +89,8 @@ Pour ce faire, on utilise entre autre des messages réflexifs (méthodes privée
 <img src="../img/diagSequence.png" alt="diagramme de séquence" >
 
 <p></p>
-<h2>Réponses aux questions relatives à l'énoncé : https://mbf-iut.i3s.unice.fr/doku.php?id=2016_2017:s2:td:td_sequences </h2>
+<h2>Réponses aux questions relatives à: <a href="https://mbf-iut.i3s.unice.fr/doku.php?id=2016_2017:s2:td:td_sequences">cet énoncé</a>
+ </h2>
 <h3>Quels sont les acteurs</h3>
 Client et Hotel 
 <h3>Comprenez-vous le scénario?</h3>
